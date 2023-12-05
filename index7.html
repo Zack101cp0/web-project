@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style sheet\style7.css">
+    <link rel="stylesheet" href="style sheet\upload7.css">
+    <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+
+    
+    <section class = "contact-section">
+      <div class = "contact-bg">
+        <h3>Get in Touch with Us</h3>
+        <h2>contact us</h2>
+        <div class = "line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class = "text"></p>
+      </div>
+
+
+      <div class = "contact-body">
+        <div class = "contact-info">
+          <div>
+            <span><i class = "fas fa-mobile-alt"></i></span>
+            <span>Phone No.</span>
+            <span class="text"></span><input type="text" class="form-control" placeholder=""></span>
+          </div>
+          <div>
+            <span><i class = "fas fa-envelope-open"></i></span>
+            <span>E-mail</span>
+            <span class="text"></span><input type="text" class="form-control" placeholder=""></span>
+          </div>
+          <div>
+            <span><i class = "fas fa-map-marker-alt"></i></span>
+            <span>Address</span>
+            <span class="text"></span><input type="text" class="form-control" placeholder=""></span>
+          </div>
+          <div>
+            <span><i class = "fas fa-clock"></i></span>
+            <span>Opening Hours</span>
+            <span class="text"></span><input type="text" class="form-control" placeholder=""></span>
+          </div>
+        </div>
+
+        <div class = "contact-form">
+          <form action="shop.html" method="GET">
+            <div>
+              <input type = "text" class = "form-control" placeholder="First Name">
+              <input type = "text" class = "form-control" placeholder="Last Name">
+            </div>
+            <div>
+              <input type = "email" class = "form-control" placeholder="E-mail">
+              
+            </div>
+             
+
+
+
+
+
+            <div class="container">
+              <input type="file" class="upload_hide" id="upload_costum" multiple>
+              <label for="upload_costum"  class="upload_label">
+                  <div class="image">
+                      <img src="" alt="">
+                  </div>
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p class="drag_text">Drag & Drop to Upload File</p>
+                  <button class="choose_file">Choose a File</button>
+              </label>
+              <button class="delete_file"> Delete File</button>
+          </div>
+      
+          <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+          <script>
+              $('.delete_file').hide();
+              $('#upload_costum').change(function(event) {
+                  let tmppath = URL.createObjectURL(event.target.files[0])
+                  $('.image > img').fadeIn('fast').attr('src',tmppath)
+                  $('.delete_file').show();
+                  $('.choose_file').hide();
+      
+                  $('.delete_file').click(function() {
+                      $('.image > img').fadeIn('fast').attr('src','')
+                    $('.delete_file').hide();
+                    
+      
+                  })
+              })
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+            <button type="submit" class="send-btn">Send</button>
+          </form>
+
+          <div>
+            <img src = "images/contact-png.png" alt = "">
+          </div>
+        </div>
+      </div>
+
+      <div class = "map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247832.7622539064!2d121.33541387238527!3d13.9355531037545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4940187e975d%3A0x231e682a37c8dabf!2sSariaya%2C%204322%20Quezon!5e0!3m2!1sen!2sph!4v1701520426550!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+      <div class = "contact-footer">
+        <h3>Follow Us</h3>
+        <div class = "social-links">
+          <a href = "#" class = "fab fa-facebook-f"></a>
+          <a href = "#" class = "fab fa-twitter"></a>
+          <a href = "#" class = "fab fa-instagram"></a>
+          <a href = "#" class = "fab fa-linkedin"></a>
+          <a href = "#" class = "fab fa-youtube"></a>
+        </div>
+      </div>
+    </section>
+
+    
+    <script src="java sheet\upload7.js"></script>
+  </body>
+</html>
+
+

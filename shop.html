@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style sheet\shop.css">
+    <title>JOB GENIE</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>JOB</span>GENIE</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index5.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li class="active"><a href="shop.html"><i class='bx bx-store-alt'></i>Job shop</a></li>
+            <li><a href="Analytics.html"><i class='bx bx-analyse'></i>Analytics</a></li>
+            <li><a href="Message.html"><i class='bx bx-message-square-dots'></i>Message</a></li>
+            <li><a href="Profile.html"><i class='bx bx-group'></i>Users</a></li>
+            <li><a href="Setting.html"><i class='bx bx-cog'></i>Settings</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="index.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="Message.html" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/max.jpg">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Job shop</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        <li><a href="#" class="active">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- start of box -->
+
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Offer's</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Skill's</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/max.jpg">
+                                    <p>Electrician</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed"  onclick="location.href='index7.html'">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/max.jpg">
+                                    <p>Mechanic</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span  class="status process"  onclick="location.href='index7.html'">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/max.jpg">
+                                    <p>Tutor</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span  class="status process"  onclick="location.href='index7.html'">Processing</span></td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- End of box -->
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Seeker</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                        <input type="search" class="content-sidebar-input" placeholder="Search...">
+                        
+                        
+                    </div>
+                     
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <a href="2Job.html">
+                                    <img src="images/Free-Electrician.JPG" alt="Profile Image">
+                                </a>
+                                <p>Electrician</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <a href="2Job.html">
+                                    <img src="images/brixe.jpg" alt="Profile Image">
+                                </a>
+                                <p>Mechanic</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <a href="2Job.html">
+                                    <img src="images/lorence.jpg" alt="Profile Image">
+                                </a>
+                                <p>Carpenter</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <a href="2Job.html">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Profile Image">
+                                </a>
+                                <p>Tutor</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="java sheet\index5.js"></script>
+</body>
+
+</html>
